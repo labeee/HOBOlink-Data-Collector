@@ -6,12 +6,13 @@ from system_environment.menu import *
 # Path variables
 path_output_df = r'dataframes_generated/'
 path_to_specific_information = r'system_environment/specific_information/'
+path_to_user_info = r'user_information/'
 
 
 # Solo variables
-userId = open('userID.txt', 'r').readlines()[0]
-client_id = open('client_id.txt', 'r').readlines()[0]
-client_secret = open('client_secret.txt', 'r').readlines()[0]
+userId = open(f'{path_to_user_info}userID.txt', 'r').readlines()[0]
+client_id = open(f'{path_to_user_info}client_id.txt', 'r').readlines()[0]
+client_secret = open(f'{path_to_user_info}client_secret.txt', 'r').readlines()[0]
 
 
 # Links and endpoint variables
