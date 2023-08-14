@@ -12,4 +12,4 @@ https://www.onsetcomp.com/sites/default/files/2023-01/25113-B%20HOBOlink%20Web%2
 - Caso todas as condições estejam completas, abra os arquivos de texto userID.txt, client_secret.txt e client_id.txt 
 e coloque as respectivas informações em cada um, sem utilizar espaços.
 
-- Feito isto, o programa está pronto para ser utilizado, basta executar o main.py.
+- Feito isto, o programa está pronto para ser utilizado, basta executar o main.py VIA TERMINAL.
