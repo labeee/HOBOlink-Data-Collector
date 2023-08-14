@@ -1,6 +1,3 @@
-Olá, obrigado por utilizar a versão pública do software de recolhimento de dados da HOBOlink e construção de tabelas! 
-Leia também a apresentação do software em Apresentação.md.
-
 ANTES DE UTILIZAR:
 
 - São necessários alguns elementos para começar a usar o software, sendo estes um ou mais loggers Bluetooth da Onset,
