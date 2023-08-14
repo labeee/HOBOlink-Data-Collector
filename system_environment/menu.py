@@ -128,4 +128,4 @@ def display_menu():
                     print('\n'*150)
         else:
             execute = False
-            print(f'\n\n{end_message}\n\nLabEEE members exclusive software\n\nSoftware fully developed by: Zac Milioli\nContact me at:\tzacmilioli@gmail.com\n\t\thttps://www.linkedin.com/in/zac-milioli\n\n\nPC ASCII Art from https://www.asciiart.eu/\nASCII Art texts from https://fsymbols.com/generators/blocky/\nAll free of copyright\n\n')
+            print(f'\n\n{end_message}\n\nPublic Version\n\nSoftware fully developed by: Zac Milioli\nContact me at:\tzacmilioli@gmail.com\n\t\thttps://www.linkedin.com/in/zac-milioli\n\n\nPC ASCII Art from https://www.asciiart.eu/\nASCII Art texts from https://fsymbols.com/generators/blocky/\nAll free of copyright\n\n')
