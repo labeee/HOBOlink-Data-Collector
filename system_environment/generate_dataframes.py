@@ -93,6 +93,7 @@ def generate_dataframes(body_json):
             dataframe_update = dataframe_update.pivot_table(index=['logger_sn', 'timestamp'], columns='sensor_measurement_type', values='si_value').reset_index()
             dataframe_update = pd.concat([dataframe_before, dataframe_update], ignore_index=True)
             dataframe_update.sort_values(by='timestamp', ignore_index=True, inplace=True)
+            dataframe_update.drop_duplicates(ignore_index=True, inplace=True)
             dataframe_update.to_csv(item, sep=';', index=False)
             os.remove(item[:-4]+'_update.csv')
 
