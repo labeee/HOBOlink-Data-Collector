@@ -1,0 +1,15 @@
+Olá, obrigado por utilizar a versão pública do software de recolhimento de dados da HOBOlink e construção de tabelas! 
+Leia também a apresentação do software em Apresentação.md.
+
+ANTES DE UTILIZAR:
+
+- São necessários alguns elementos para começar a usar o software, sendo estes um ou mais loggers Bluetooth da Onset,
+uma conta na HOBOlink, o aplicativo HOBOconnect instalado em um dispositivo com Bluetooth ou um MX Gateway conectados
+à conta da HOBOlink, um client_secret e client_id (ambos devem ser solicitados à Onset previamente) e 
+seu userID (número encontrado no link da página da HOBOlink após efetuar o login). Na dúvida, vide o manual em 
+https://www.onsetcomp.com/sites/default/files/2023-01/25113-B%20HOBOlink%20Web%20Services%20V3%20Developer%27s%20Guide.pdf.
+
+- Caso todas as condições estejam completas, abra os arquivos de texto userID.txt, client_secret.txt e client_id.txt 
+e coloque as respectivas informações em cada um, sem utilizar espaços.
+
+- Feito isto, o programa está pronto para ser utilizado, basta executar o main.py.
