@@ -110,7 +110,7 @@ def display_menu():
         elif opt == '1':
             print(mx1102_logger_art)
             print(many_loggers_art)
-            selected_loggers = input(f'\n{"- "*45}\nInform the loggers you would like to request data from\n\nNOTICE: the loggers should be comma [,] separated. ex: 1234,5678,9101,0000\n\nThe logger limit per request is 10\n\n[ENTER] Cancel\n{"- "*45}\n\n...')
+            selected_loggers = input(f'\n{"- "*45}\nInform the loggers you would like to request data from\n\nNOTICE: the loggers should be comma [,] separated. ex: 1234,5678,9101,0000\n\nThe logger limit per request is 10\n\nThe loggers you request MUST be registered at your HOBOlink account\nInsert loggers serial numbers, not name\n\n[ENTER] Cancel\n{"- "*45}\n\n...')
             okay = True
             if selected_loggers == '':
                 print('\n'*150)
