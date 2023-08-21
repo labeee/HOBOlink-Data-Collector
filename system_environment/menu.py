@@ -17,7 +17,7 @@ def display_menu():
         print(welcome)
         start_date_for_requests_file = open(f'{path_to_specific_information}start_date_for_requests.txt', 'r').readlines()[0]
         end_date_for_requests_file = open(f'{path_to_specific_information}end_date_for_requests.txt', 'r').readlines()[0]
-        option = input(f'\n{"- "*45}\nInsert the timestamps you wish to gather data in between (can be changed again in the menu)\n\n\tStart\t\t\tEnd\n\t{start_date_for_requests_file}\t{end_date_for_requests_file}\n\n\t[0] Change start timestamp\n\t[1] Change end timestamp\n\t[2] Change end timestamp to current datetime\n\n\t[ENTER] Start options screen\n{"- "*45}\n\n...')
+        option = input(f'\n{"- "*45}\nInsert the timestamps you wish to gather data in between (can be changed again in the menu)\n\n\tStart\t\t\tEnd\n\t{start_date_for_requests_file}\t{end_date_for_requests_file}\n\n\t[0] Change start timestamp\n\t[1] Change end timestamp\n\t[2] Change end timestamp to current datetime\n\t[3] Restore timestamps\n\n\t[ENTER] Start options screen\n{"- "*45}\n\n...')
         if option == '':   
             okay = False
             print('\n'*150)
@@ -52,6 +52,11 @@ def display_menu():
                 open(f'{path_to_specific_information}end_date_for_requests.txt', 'w').write(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
                 print('\n'*150)
                 print('End date updated!\n')
+            elif option == "3":
+                open(f'{path_to_specific_information}end_date_for_requests.txt', 'w').write('0000-00-00 00:00:00')
+                open(f'{path_to_specific_information}start_date_for_requests.txt', 'w').write('0000-00-00 00:00:00')
+                print('\n'*150)
+                print('Timestamps restored!\n')
     while execute:
         print('\n'*150)
         if open(f'{path_to_specific_information}start_date_for_requests.txt', 'r').readlines()[0] >= open(f'{path_to_specific_information}end_date_for_requests.txt', 'r').readlines()[0]:
@@ -71,7 +76,7 @@ def display_menu():
                 print(timestamp)
                 start_date_for_requests_file = open(f'{path_to_specific_information}start_date_for_requests.txt', 'r').readlines()[0]
                 end_date_for_requests_file = open(f'{path_to_specific_information}end_date_for_requests.txt', 'r').readlines()[0]
-                option = input(f'\n{"- "*45}\nThe returned data is what is registered between these timestamps.\n\n\tStart\t\t\tEnd\n\t{start_date_for_requests_file}\t{end_date_for_requests_file}\n\n\t[0] Change start timestamp\n\t[1] Change end timestamp\n\t[2] Change end timestamp to current datetime\n\n\t[ENTER] Go back to menu\n{"- "*45}\n\n...')
+                option = input(f'\n{"- "*45}\nThe returned data is what is registered between these timestamps.\n\n\tStart\t\t\tEnd\n\t{start_date_for_requests_file}\t{end_date_for_requests_file}\n\n\t[0] Change start timestamp\n\t[1] Change end timestamp\n\t[2] Change end timestamp to current datetime\n\t[3] Restore timestamps\n\n\t[ENTER] Go back to menu\n{"- "*45}\n\n...')
                 if option == '':   
                     okay = False
                     print('\n'*150)
@@ -106,7 +111,11 @@ def display_menu():
                         open(f'{path_to_specific_information}end_date_for_requests.txt', 'w').write(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
                         print('\n'*150)
                         print('End date updated!\n')
-       
+                    elif option == "3":
+                        open(f'{path_to_specific_information}end_date_for_requests.txt', 'w').write('0000-00-00 00:00:00')
+                        open(f'{path_to_specific_information}start_date_for_requests.txt', 'w').write('0000-00-00 00:00:00')
+                        print('\n'*150)
+                        print('Timestamps restored!\n')
         elif opt == '1':
             print(mx1102_logger_art)
             print(many_loggers_art)
