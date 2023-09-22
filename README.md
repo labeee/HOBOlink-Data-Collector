@@ -8,7 +8,7 @@
 ##  Boas vindas aos usuários
 Olá, obrigado por utilizar a versão pública do software de recolhimento de dados da HOBOlink e construção de planilhas! Leia o manual e o arquivo GUIA.txt antes de utilizar. O manual é direcionado à versão exclusiva para membros do LabEEE, mas serve para este software também, visto que são iguais porém apenas com as funções básicas.
 
-Me chamo Zac Milioli, sou o desenvolvedor responsável por estes códigos. Deixarei abaixo meu email e linkedin para contato.
+Me chamo Zac Milioli, sou o desenvolvedor responsável por estes códigos.
 > zacmilioli@gmail.com
 
 > [Meu Linkedin](https://www.linkedin.com/in/zac-milioli)
